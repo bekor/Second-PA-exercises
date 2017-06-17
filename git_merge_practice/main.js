@@ -1,5 +1,5 @@
 
-// Handle things on the top
+// Well There were no changes, so I think it is safe to say it will be ok if I delete some stuff from here
 (function(w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({'gtm.start': new Date().getTime(),event: 'gtm.js'});
@@ -39,34 +39,9 @@ _stq.push(['view', {
     tz: '0',
     srv: 'codecool.hu'
 }]);
-_stq.push(['clickTrackerInit', '118685793', '5']);
+_stq.push(['clickTrackerInit', '118685793', '2']); // Here u change something
 
-// handle href and some element
-function loadCSS(href, before, media) {
-    "use strict";
-    var ss = window.document.createElement("link");
-    var ref = before || window.document.getElementsByTagName("script")[0];
-    var sheets = window.document.styleSheets;
-    ss.rel = "stylesheet";
-    ss.href = href;
-    ss.media = "only x ";
-    ref.parentNode.insertBefore(ss,ref);
-    function toggleMedia(){
-        var defined;
-        for(var i = 0; i < sheets.length; i++) {
-            if (sheets[i].href && sheets[i].href.indexOf(href) > -1) {
-                defined = true;
-            }
-        }
-        if (defined) {
-            ss.media = media || "all";
-        } else {
-            setTimeout(toggleMedia);
-            }
-        }
-    toggleMedia();
-    return ss;
-}
+// handle href and some element DELETED
 
 // Callback function for loading scripts
 function loadScript(src, callback) {
